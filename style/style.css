@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(36, 7, 7);
+    overflow-x: hidden;
+    z-index: 7;
+}
+
+nav {
+    background-color: rgb(97, 210, 255);
+    width: 100% ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav .container-fluid .navbar-header .navbar-brand {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+nav .container-fluid .navbar-header .navbar-brand:hover {
+    color: rgb(0, 0, 0);
+}
+
+nav .container-fluid button span {
+    color: black;
+}
+
+
+/*=====================HOME============================*/
+#Home {
+    width: 100%;
+}
+
+#Home .container-fluid {
+    margin-top: 180px;
+
+}
+
+#Home .container-fluid .col img {
+    border-radius: 80%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    cursor: pointer;
+
+
+
+}
+
+#Home .container-fluid .cols {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+}
+
+#Home .container-fluid .cols div button a {
+    text-decoration: none;
+    color: white;
+
+}
+
+#Home .container-fluid .cols div button {
+    background-color: rgb(0, 183, 255);
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+#Home .container-fluid .cols .btns {
+    margin-top: 50px;
+}
+
+#Home .container-fluid .cols .btns:hover {
+    transition: 0.5s;
+
+    animation: 2s ease-in infinite scroll;
+
+}
+
+#Home .container-fluid .cols .btns button {
+    background-color: none;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateY(-10px);
+
+    }
+
+    to {
+        transform: translateY(10px);
+        ;
+    }
+
+}
+
+#Home .container-fluid .cols div h2 {
+    font-family: sans-serif;
+
+    font-style: oblique;
+    color: black;
+    font-weight: 700;
+    font-size: 54px;
+
+    text-align: center;
+    width: 200px;
+
+}
+
+#Home .container-fluid .cols h4 {
+    font-weight: 700;
+    margin-top: 20px;
+
+}
+
+#Home .container-fluid .cols div p {
+    line-height: 25px;
+   font-family: sans-serif;
+    font-size: 17px;
+    font-style:italic;
+    color: black;
+    font-weight: bold;
+    width: 400px;
+    text-align: justify;
+
+}
+
+body.active {
+    background-color: #1e272e;
+    color: #ddd;
+}
+
+body.active nav {
+    background-color: #95afc0;
+}
+
+body.active #Home .container-fluid .cols div h2,
+body.active #Home .container-fluid .cols div p {
+    color: white;
+}
+
+
+/* ============================  About =========================== */
+
+
+#About {
+    height: 70vh;
+    width: 100%;
+
+}
+
+#About .container-fluid .cols img {
+    border-radius: 8px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#About .container-fluid .col  p {
+    line-height: 25px;
+    font-family: sans-serif;
+    font-style: italic;
+   
+    font-weight: bold;
+    width: 400px;
+    text-align: justify;
+}
+
+#About .container-fluid .col .course {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#About .container-fluid .col .course .month,
+#About .container-fluid .col .course .pro,
+#About .container-fluid .col .course .complete {
+
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#About .container-fluid .col .course .month h4,
+#About .container-fluid .col .course .pro h4,
+#About .container-fluid .col .course .complete h4 {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+
+}
+
+body.active #About .container-fluid .col div p,
+body.active #About .container-fluid .col .course .month h4,
+body.active #About .container-fluid .col .course .pro h4,
+body.active #About .container-fluid .col .course .complete h4 {
+    color: white;
+}
+
+/* ===================================== Skills ========================= */
+#Skills {
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+#Skills .conatiner-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Skills .conatiner-fluid .cols #box {
+    margin-top: 30px;
+    width: 600px;
+    background-color: white;
+
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+#Skills .conatiner-fluid .cols #box li {
+    list-style: none;
+    width: 100%;
+
+
+}
+
+#Skills .conatiner-fluid .cols #box li label {
+    /* background-color: rgb(0, 183, 255); */
+    color: rgb(0, 183, 255);
+    display: flex;
+    justify-content: space-between;
+    font-size: 18.5px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 700;
+
+
+}
+
+#Skills .conatiner-fluid .cols #box li .progress {
+    margin: 30px 0px;
+
+}
+
+i {
+    margin-top: 3px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.content {
+    padding: 0 10px;
+    line-height: 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s linear;
+    border-bottom: 2px solid white;
+}
+
+#Skills .conatiner-fluid .cols #box li input[type="radio"]:checked~.content {
+    max-height: 600px;
+}
+
+#Skills .conatiner-fluid .cols #box li input[type="radio"]:checked+label i {
+    transform: rotate(90deg);
+}
+
+
+
+body.active #Skills .conatiner-fluid .cols #box {
+    background-color: orange;
+    color: #ddd;
+}
+
+body.active #Skills .conatiner-fluid .cols #box li label {
+    color: #ddd;
+}
+
+/* ========================= Qualification ========================= */
+
+
+#Qualification {
+    height: 100vh;
+    width: 100vw;
+}
+
+#Qualification .container-fluid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+
+    height: 100vh;
+}
+
+#Qualification .container-fluid .colcol-md-6 {
+    width: 600px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#Qualification .container-fluid .colcol-md-6 div {
+    margin-left: 20px;
+
+}
+
+#Qualification .container-fluid .colcol-md-6 div .Education.active {
+    color: rgb(0, 183, 255);
+}
+
+#Qualification .container-fluid .colcol-md-6 div .Certificate-header.active {
+    color: rgb(0, 183, 255);
+}
+
+#Qualification .container-fluid .colcol-md-6 div .data.active {
+    display: none;
+}
+
+#Qualification .container-fluid .colcol-md-6 div .toggle {
+    display: none;
+}
+
+#Qualification .container-fluid .colcol-md-6 div .toggle.active {
+    display: block;
+}
+
+body.active #Qualification .container-fluid .colcol-md-6 div {
+    color: white;
+}
+
+/* ==================================== Service =========================  */
+#Service {
+    height: 70vh;
+    width: 100vw;
+
+}
+
+#Service .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+
+    height: 70vh;
+}
+
+#Service .container .cols {
+    width: 270px;
+    height: 300px;
+    margin-top: 30px;
+    width: 210px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    border-radius: 3px;
+    flex-direction: column;
+    align-self: self-start;
+    justify-content: space-evenly;
+    font-weight: 700;
+   
+}
+
+#Service .container .cols .title {
+    font-size: 19px;
+
+}
+
+#Service .container .cols .see-more {
+    color: cadetblue;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#Service .container .cols .see-more i {
+    margin-left: 5px;
+}
+
+body.active #Service .container .cols {
+    background-color: orange;
+    border-radius: 3px;
+}
+
+body.active #Service .container .cols .see-more {
+    color: #ddd;
+
+}
+
+body.active #Service .container .cols {
+    box-shadow: rgb(0, 195, 255) 0px 2px 5px -1px, rgb(0, 213, 255) 0px 1px 3px -1px;
+}
+
+
+
+/* ============================== PORTFOLIO ============================= */
+#Portfolio {
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+#Portfolio .container-fluid {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#Portfolio .container .row .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+#Portfolio .container .row .col {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Portfolio .container .row .col div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#Portfolio .container .row .col div div {
+    margin: 20px 10px;
+}
+
+/* #Portfolio .container .row .col .last-div {
+    /* margin-left: 170px; 
+} */
+
+#Portfolio .container .row .col div div button {
+    background: linear-gradient(130deg, rgb(0, 183, 255), rgb(255, 0, 72), rgb(0, 38, 255));
+    background-size: 200% 200%;
+    animation: change 2s linear.4s infinite;
+
+    border-radius: 4px;
+}
+
+@keyframes change {
+    0% {
+        background-position: 10% 0%;
+    }
+
+    50% {
+        background-position: 91% 100%;
+    }
+
+    100% {
+        background-position: 10% 0%;
+    }
+}
+
+/* ============================================== CONTACT ============================== */
+#Contact {
+    height: 65vh;
+    width: 100%;
+}
+
+#Contact .container {
+    
+    height: 60vh;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body.active .cols {
+    color: white;
+}
+
+
+.Service-display {
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.599);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center
+}
+
+.Service-display div {
+    background-color: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    width: 350px;
+    color: black;
+    height: 250px;
+    border-radius: 5px;
+}
+.Service-display div h3{
+    margin-left: 15px;
+}
+.Service-display div h5{
+    margin-left: 45px;
+    margin-top: 25px;
+}
+.Service-display div .mark{
+    float: right; margin-right:15px  ; margin-top: 10px; cursor: pointer;
+}
+.Service-display div.active{
+    display: none;
+}
+
+.Service-display.active {
+    display: flex;
+
+}
+.Service-display .Frontend {
+    display: none;
+}
+.Service-display .Frontend.active{
+    display: block;
+}
+.Service-display .Frontend.remove
+{    display: none;}
+
+.Service-display .Backend{
+    display: none;
+}
+.Service-display .Backend.active{
+    display: block;
+}
+
+.home {
+    float: right;
+    background-color: skyblue;
+
+
+    width: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+
+
+}
+
+.home button {
+    scroll-behavior: smooth;
+    border-radius: 10px;
+    background-color: rgb(0, 183, 255);
+    color: black;
+    border: none;
+    outline: none;
+
+}
+
+.home button i {
+    color: black;
+}
+footer{
+    
+    width: 100vw;
+    height: 10vh;
+    color: rgb(0, 0, 0);
+}
+footer div{text-align: center;}
+
+footer div a{
+    color: rgb(0, 183, 255);
+}
+body.active footer div h5
+{
+    color: white;
+}
+
+@media(max-width:765px) {
+
+
+    /* ================Home===================== */
+
+    #Home .container-fluid {
+        margin-top: 70px;
+    }
+
+    #Home .container-fluid {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    #Home .container-fluid .cols h1 {
+        font-family: serif;
+        font-style: oblique;
+        color: black;
+        font-weight: 700;
+        /* background-color: red;
+        width: 200px; */
+
+    }
+    #Home .container-fluid .cols div{
+        margin-top: 30px;
+    }
+
+    #Home .container-fluid .cols div h2 {
+  
+        font-family: serif;
+        font-style: oblique;
+        color: black;
+        font-weight: 700;
+        font-size: 30px;
+        display: inline;
+    }
+
+    #Home .container-fluid .cols div p {
+        line-height: 25px;
+       
+        font-size: 16px;
+       font-family: cursive;
+        color: black;
+       
+
+        text-align: justify;
+
+    }
+
+
+    /* =============================About=========================== */
+    #About {
+        height: 123vh;
+        width: 100%;
+
+    }
+
+    #About .container-fluid {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #About .container-fluid .col div p {
+        line-height: 25px;
+        font-family: serif;
+        font-size: 17px;
+        font-style: oblique;
+        color: black;
+        font-weight: bold;
+
+        margin-top: 25px;
+        text-align: justify;
+    }
+
+    /* ==================== Skills======================== */
+    #Skills {height: 95vh;
+    
+    width: 100%;
+    }
+    /* #Skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    } */
+    #Skills .conatiner-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #Skills .conatiner-fluid .cols #box {
+        margin-top: 30px;
+        width: 350px;
+        background-color: #fff;
+        border-radius: 5px;
+        border-radius: 3px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    }
+
+    /*===============================Qualification====================  */
+    #Qualification .container-fluid .colcol-md-6 {
+        width: 100%;
+      
+
+    }
+  
+
+    /* ============================ Service ================================ */
+
+    #Service {
+        height: 150vh;
+    }
+
+    #Service .container {
+     display: flex;
+    flex-wrap: wrap;
+     align-items: center;
+    justify-content: center;
+
+
+    }
+
+    #Service .container .col {
+        margin-top: 30px;
+    
+
+    }
+
+    /* ====================================== PORTFOLIO ======================================= */
+
+    #Portfolio .container .row .col {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    /* ======================================= CONTACT ================================= */
+    #Contact{
+        height: 110vh;
+    }
+    #Contact .container {
+        height: 100vh;
+        display: flex;
+      
+        align-items: center;
+        justify-content: space-around;
+    }
+    #Contact .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #Contact .container .cols {
+        width: 100%;
+    }
+
+}
+
+/* ========================= DARK MODE ================== */
