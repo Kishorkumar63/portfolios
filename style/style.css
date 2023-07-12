@@ -107,7 +107,7 @@ nav .container-fluid button span {
 }
 
 #Home .container-fluid .cols div h2 {
-    font-family: sans-serif;
+    font-family:serif;
 
     font-style: oblique;
     color: black;
@@ -719,7 +719,7 @@ body.active footer div h5
     /* ============================ Service ================================ */
 
     #Service {
-        height: 150vh;
+        height: 146vh;
     }
 
     #Service .container {
