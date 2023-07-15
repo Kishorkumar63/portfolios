@@ -590,9 +590,12 @@ body.active .cols {
     color: black;
 }
 footer{
-    
+   margin-top: 40px;
+    background-color: blue;
     width: 100%;
-    height: 5vh;
+    height: 10vh;
+   
+   
     color: rgb(0, 0, 0);
 }
 footer div{text-align: center;}
@@ -755,7 +758,7 @@ body.active footer div h5
 
     /* ======================================= CONTACT ================================= */
     #Contact{
-        height: 110vh;
+        height: 120vh;
     }
     #Contact .container {
         height: 100vh;
