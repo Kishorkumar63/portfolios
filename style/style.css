@@ -519,12 +519,12 @@ body.active .cols {
 
 
 .Service-display {
-    height: 100vw;
+    height: 100vh;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.599);
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
     display: none;
     align-items: center;
@@ -741,7 +741,8 @@ align-self: start;
     #About .container-fluid .col div p {
         line-height: 25px;
         font-family: serif;
-        font-size: 17px;
+        font-size: 18px;
+        font-weight: 900;
         font-style: oblique;
         color: black;
         font-weight: bold;
