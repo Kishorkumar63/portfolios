@@ -51,20 +51,19 @@ nav .container-fluid button span {
 
 }
 
-#Home .container-fluid .col img {
-    border-radius: 80%;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    cursor: pointer;
-
-
-
-}
 
 #Home .container-fluid .cols {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
 
     justify-content: space-evenly;
+
+}
+#Home .container-fluid .cols .kumar img{
+    border-radius: 80%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    cursor: pointer;
 
 }
 
@@ -149,7 +148,7 @@ body.active nav {
     background-color: #95afc0;
 }
 
-body.active #Home .container-fluid .cols div h2,
+body.active #Home .container-fluid .cols .kishor h2,
 body.active #Home .container-fluid .cols div p {
     color: white;
 }
@@ -159,9 +158,16 @@ body.active #Home .container-fluid .cols div p {
 
 
 #About {
-    height: 70vh;
+    min-height: 70vh;
     width: 100%;
 
+}
+
+#About .container-fluid {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #About .container-fluid .cols img {
@@ -593,6 +599,9 @@ body.active .cols {
 .home button i {
     color: black;
 }
+body.active .footer , body.active .footer div h5 i{
+    color: #ddd;
+}
 .footer{
    margin-top: 40px;
    display: flex;
@@ -619,37 +628,61 @@ body.active footer div h5
 }
 
 @media(max-width:765px) {
-    nav{
-        width: 100%;
-    }
-
+nav{
+    position: sticky;
+    top:0px
+   } 
 
     /* ================Home===================== */
-
+    #Home{
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+        align-items: center;
+       
+        width: 100%;
+   
+    
+    }
     #Home .container-fluid {
         margin-top: 70px;
+        height: 100vh;
     }
 
-    #Home .container-fluid {
+ 
+
+    #Home .container-fluid .cols {
+   
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        align-content: center;
-        justify-content: center;
-
+   
+        justify-content: space-evenly;
+    
     }
 
-    #Home .container-fluid .cols h1 {
+    #Home .container-fluid .cols .kishor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #Home .container-fluid .cols .kishor h2{
+        margin-top: 20px;
+    }
+  
+    #Home .container-fluid .cols .kishor .Name h2{
         font-family: serif;
         font-style: oblique;
         color: black;
         font-weight: 700;
-        /* background-color: red;
-        width: 200px; */
+      
+        margin-top: 20px;
 
     }
-    #Home .container-fluid .cols div{
-        margin-top: 30px;
+    #Home .container-fluid .cols .kishor .button{
+align-self: flex-start;
+
     }
 
     #Home .container-fluid .cols div h2 {
@@ -677,7 +710,7 @@ body.active footer div h5
 
     /* =============================About=========================== */
     #About {
-        height: 123vh;
+        height: 130vh;
         width: 100%;
 
     }
@@ -686,6 +719,16 @@ body.active footer div h5
         display: flex;
         align-items: center;
         flex-direction: column;
+        height: 100vh;
+    }
+    #About .container-fluid .col{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #About .container-fluid .col .btn{
+        align-self: start;
     }
 
     #About .container-fluid .col div p {
@@ -701,7 +744,7 @@ body.active footer div h5
     }
 
     /* ==================== Skills======================== */
-    #Skills {height: 95vh;
+    #Skills {height: 100vh;
     
     width: 100%;
     }
@@ -728,6 +771,14 @@ body.active footer div h5
     }
 
     /*===============================Qualification====================  */
+    #Qualification {
+        height: 100vh;
+    }
+    #Qualification .container-fluid
+    {
+        display: flex;
+        align-items: center;
+    }
     #Qualification .container-fluid .colcol-md-6 {
         width: 100%;
         display: flex;
@@ -771,6 +822,12 @@ body.active footer div h5
 
     /* ====================================== PORTFOLIO ======================================= */
 
+    #Portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
     #Portfolio .container .row .col {
         display: flex;
         flex-direction: row;
