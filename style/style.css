@@ -779,7 +779,7 @@ align-self: start;
 
     /*===============================Qualification====================  */
     #Qualification {
-        height: 100vh;
+        height: 90vh;
     }
     #Qualification .container-fluid
     {
@@ -811,7 +811,7 @@ align-self: start;
     /* ============================ Service ================================ */
 
     #Service {
-        height: 100vh;
+        height: 130vh;
     }
 
     #Service .container {
