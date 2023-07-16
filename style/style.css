@@ -519,7 +519,7 @@ body.active .cols {
 
 
 .Service-display {
-    height: 100Vw;
+    height: 100vw;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.599);
     left: 0;
@@ -701,8 +701,8 @@ align-self: start;
 
     #Home .container-fluid .cols div p {
         line-height: 25px;
-       
-        font-size: 16px;
+       font-weight: 900;
+        font-size: 18px;
        font-family: cursive;
         color: black;
        
