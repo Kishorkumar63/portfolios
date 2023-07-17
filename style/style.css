@@ -519,13 +519,16 @@ body.active .cols {
 
 
 .Service-display {
-    height: 100vh;
+    
     position: fixed;
     background-color: rgba(0, 0, 0, 0.599);
     left: 0;
-    top: 0;
+    top:0;
+    bottom: 0;
+    
     width: 100%;
     z-index: 1;
+    min-height: 110vh;
     display: none;
     align-items: center;
     justify-content: center
@@ -715,7 +718,7 @@ align-self: start;
 
     /* =============================About=========================== */
     #About {
-        height: 106vh;
+        height: 107vh;
         width: 100%;
 
     }
@@ -736,7 +739,7 @@ align-self: start;
     }
     #About .container-fluid .col .btn{
         align-self: flex-start;
-        margin-left: 15px;
+        margin-left: 16px;
         
     }
 
