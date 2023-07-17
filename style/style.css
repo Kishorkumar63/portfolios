@@ -639,7 +639,7 @@ nav{
     #Home{
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 101vh;
         align-items: center;
        
         width: 100vw;
@@ -702,6 +702,7 @@ align-self: start;
     #Home .container-fluid .cols div p {
         line-height: 25px;
        font-weight: 900;
+       
         font-size: 18px;
        font-family: cursive;
         color: black;
@@ -714,7 +715,7 @@ align-self: start;
 
     /* =============================About=========================== */
     #About {
-        height: 100vh;
+        height: 106vh;
         width: 100%;
 
     }
@@ -734,11 +735,12 @@ align-self: start;
         width: 100%;
     }
     #About .container-fluid .col .btn{
-        align-self: start;
+        align-self: flex-start;
+        margin-left: 15px;
         
     }
 
-    #About .container-fluid .col div p {
+    #About .container-fluid .col  .p {
         line-height: 25px;
         font-family: serif;
         font-size: 18px;
@@ -747,6 +749,8 @@ align-self: start;
         color: black;
         font-weight: bold;
 
+width: 400px;
+padding-left: 20px;
         margin-top: 25px;
         text-align: justify;
     }
@@ -756,12 +760,7 @@ align-self: start;
     
     width: 100%;
     }
-    /* #Skills{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    } */
+   
     #Skills .conatiner-fluid {
         display: flex;
         flex-direction: column;
