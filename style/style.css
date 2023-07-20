@@ -642,7 +642,7 @@ nav{
     #Home{
         display: flex;
         flex-direction: column;
-        height: 101vh;
+       min-height: 101vh;
         align-items: center;
        
         width: 100vw;
@@ -718,7 +718,7 @@ align-self: start;
 
     /* =============================About=========================== */
     #About {
-        height: 107vh;
+        min-height: 107vh;
         width: 100%;
 
     }
@@ -759,7 +759,8 @@ padding-left: 20px;
     }
 
     /* ==================== Skills======================== */
-    #Skills {height: 90vh;
+    #Skills {
+        min-height: 90vh;
     
     width: 100%;
     }
@@ -782,7 +783,7 @@ padding-left: 20px;
 
     /*===============================Qualification====================  */
     #Qualification {
-        height: 90vh;
+        min-height: 90vh;
     }
     #Qualification .container-fluid
     {
@@ -814,7 +815,7 @@ padding-left: 20px;
     /* ============================ Service ================================ */
 
     #Service {
-        height: 130vh;
+        min-height: 130vh;
     }
 
     #Service .container {
@@ -838,7 +839,7 @@ padding-left: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
+       min-height: 100vh;
     }
     #Portfolio .container .row .col {
         display: flex;
@@ -850,7 +851,7 @@ padding-left: 20px;
 
     /* ======================================= CONTACT ================================= */
     #Contact{
-        height: 100vh;
+        min-height: 100vh;
     }
     #Contact .container {
         height: 100vh;
